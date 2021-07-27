@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20564D4926B0C8C8002F8076 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20564D4826B0C8C8002F8076 /* AppDelegate.swift */; };
+		20564D4B26B0C8C8002F8076 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20564D4A26B0C8C8002F8076 /* SceneDelegate.swift */; };
+		20564D4D26B0C8C8002F8076 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20564D4C26B0C8C8002F8076 /* ViewController.swift */; };
+		20564D5026B0C8C8002F8076 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20564D4E26B0C8C8002F8076 /* Main.storyboard */; };
+		20564D5226B0C8CA002F8076 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20564D5126B0C8CA002F8076 /* Assets.xcassets */; };
+		20564D5526B0C8CA002F8076 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20564D5326B0C8CA002F8076 /* LaunchScreen.storyboard */; };
+		20564D6026B0C8CA002F8076 /* NobelLaureatesFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20564D5F26B0C8CA002F8076 /* NobelLaureatesFinderTests.swift */; };
+		20564D6B26B0C8CA002F8076 /* NobelLaureatesFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20564D6A26B0C8CA002F8076 /* NobelLaureatesFinderUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20564D5C26B0C8CA002F8076 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20564D3D26B0C8C8002F8076 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20564D4426B0C8C8002F8076;
+			remoteInfo = NobelLaureatesFinder;
+		};
+		20564D6726B0C8CA002F8076 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20564D3D26B0C8C8002F8076 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20564D4426B0C8C8002F8076;
+			remoteInfo = NobelLaureatesFinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20564D4526B0C8C8002F8076 /* NobelLaureatesFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NobelLaureatesFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20564D4826B0C8C8002F8076 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20564D4A26B0C8C8002F8076 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		20564D4C26B0C8C8002F8076 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		20564D4F26B0C8C8002F8076 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20564D5126B0C8CA002F8076 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20564D5426B0C8CA002F8076 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20564D5626B0C8CA002F8076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20564D5B26B0C8CA002F8076 /* NobelLaureatesFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NobelLaureatesFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20564D5F26B0C8CA002F8076 /* NobelLaureatesFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NobelLaureatesFinderTests.swift; sourceTree = "<group>"; };
+		20564D6126B0C8CA002F8076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20564D6626B0C8CA002F8076 /* NobelLaureatesFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NobelLaureatesFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20564D6A26B0C8CA002F8076 /* NobelLaureatesFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NobelLaureatesFinderUITests.swift; sourceTree = "<group>"; };
+		20564D6C26B0C8CA002F8076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20564D4226B0C8C8002F8076 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20564D5826B0C8CA002F8076 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20564D6326B0C8CA002F8076 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20564D3C26B0C8C8002F8076 = {
+			isa = PBXGroup;
+			children = (
+				20564D4726B0C8C8002F8076 /* NobelLaureatesFinder */,
+				20564D5E26B0C8CA002F8076 /* NobelLaureatesFinderTests */,
+				20564D6926B0C8CA002F8076 /* NobelLaureatesFinderUITests */,
+				20564D4626B0C8C8002F8076 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20564D4626B0C8C8002F8076 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20564D4526B0C8C8002F8076 /* NobelLaureatesFinder.app */,
+				20564D5B26B0C8CA002F8076 /* NobelLaureatesFinderTests.xctest */,
+				20564D6626B0C8CA002F8076 /* NobelLaureatesFinderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20564D4726B0C8C8002F8076 /* NobelLaureatesFinder */ = {
+			isa = PBXGroup;
+			children = (
+				20564D4826B0C8C8002F8076 /* AppDelegate.swift */,
+				20564D4A26B0C8C8002F8076 /* SceneDelegate.swift */,
+				20564D4C26B0C8C8002F8076 /* ViewController.swift */,
+				20564D4E26B0C8C8002F8076 /* Main.storyboard */,
+				20564D5126B0C8CA002F8076 /* Assets.xcassets */,
+				20564D5326B0C8CA002F8076 /* LaunchScreen.storyboard */,
+				20564D5626B0C8CA002F8076 /* Info.plist */,
+			);
+			path = NobelLaureatesFinder;
+			sourceTree = "<group>";
+		};
+		20564D5E26B0C8CA002F8076 /* NobelLaureatesFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				20564D5F26B0C8CA002F8076 /* NobelLaureatesFinderTests.swift */,
+				20564D6126B0C8CA002F8076 /* Info.plist */,
+			);
+			path = NobelLaureatesFinderTests;
+			sourceTree = "<group>";
+		};
+		20564D6926B0C8CA002F8076 /* NobelLaureatesFinderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				20564D6A26B0C8CA002F8076 /* NobelLaureatesFinderUITests.swift */,
+				20564D6C26B0C8CA002F8076 /* Info.plist */,
+			);
+			path = NobelLaureatesFinderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20564D4426B0C8C8002F8076 /* NobelLaureatesFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20564D6F26B0C8CA002F8076 /* Build configuration list for PBXNativeTarget "NobelLaureatesFinder" */;
+			buildPhases = (
+				20564D4126B0C8C8002F8076 /* Sources */,
+				20564D4226B0C8C8002F8076 /* Frameworks */,
+				20564D4326B0C8C8002F8076 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NobelLaureatesFinder;
+			productName = NobelLaureatesFinder;
+			productReference = 20564D4526B0C8C8002F8076 /* NobelLaureatesFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20564D5A26B0C8CA002F8076 /* NobelLaureatesFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20564D7226B0C8CA002F8076 /* Build configuration list for PBXNativeTarget "NobelLaureatesFinderTests" */;
+			buildPhases = (
+				20564D5726B0C8CA002F8076 /* Sources */,
+				20564D5826B0C8CA002F8076 /* Frameworks */,
+				20564D5926B0C8CA002F8076 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20564D5D26B0C8CA002F8076 /* PBXTargetDependency */,
+			);
+			name = NobelLaureatesFinderTests;
+			productName = NobelLaureatesFinderTests;
+			productReference = 20564D5B26B0C8CA002F8076 /* NobelLaureatesFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		20564D6526B0C8CA002F8076 /* NobelLaureatesFinderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20564D7526B0C8CA002F8076 /* Build configuration list for PBXNativeTarget "NobelLaureatesFinderUITests" */;
+			buildPhases = (
+				20564D6226B0C8CA002F8076 /* Sources */,
+				20564D6326B0C8CA002F8076 /* Frameworks */,
+				20564D6426B0C8CA002F8076 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20564D6826B0C8CA002F8076 /* PBXTargetDependency */,
+			);
+			name = NobelLaureatesFinderUITests;
+			productName = NobelLaureatesFinderUITests;
+			productReference = 20564D6626B0C8CA002F8076 /* NobelLaureatesFinderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20564D3D26B0C8C8002F8076 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					20564D4426B0C8C8002F8076 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					20564D5A26B0C8CA002F8076 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 20564D4426B0C8C8002F8076;
+					};
+					20564D6526B0C8CA002F8076 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 20564D4426B0C8C8002F8076;
+					};
+				};
+			};
+			buildConfigurationList = 20564D4026B0C8C8002F8076 /* Build configuration list for PBXProject "NobelLaureatesFinder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20564D3C26B0C8C8002F8076;
+			productRefGroup = 20564D4626B0C8C8002F8076 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20564D4426B0C8C8002F8076 /* NobelLaureatesFinder */,
+				20564D5A26B0C8CA002F8076 /* NobelLaureatesFinderTests */,
+				20564D6526B0C8CA002F8076 /* NobelLaureatesFinderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20564D4326B0C8C8002F8076 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20564D5526B0C8CA002F8076 /* LaunchScreen.storyboard in Resources */,
+				20564D5226B0C8CA002F8076 /* Assets.xcassets in Resources */,
+				20564D5026B0C8C8002F8076 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20564D5926B0C8CA002F8076 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20564D6426B0C8CA002F8076 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20564D4126B0C8C8002F8076 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20564D4D26B0C8C8002F8076 /* ViewController.swift in Sources */,
+				20564D4926B0C8C8002F8076 /* AppDelegate.swift in Sources */,
+				20564D4B26B0C8C8002F8076 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20564D5726B0C8CA002F8076 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20564D6026B0C8CA002F8076 /* NobelLaureatesFinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20564D6226B0C8CA002F8076 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20564D6B26B0C8CA002F8076 /* NobelLaureatesFinderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20564D5D26B0C8CA002F8076 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20564D4426B0C8C8002F8076 /* NobelLaureatesFinder */;
+			targetProxy = 20564D5C26B0C8CA002F8076 /* PBXContainerItemProxy */;
+		};
+		20564D6826B0C8CA002F8076 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20564D4426B0C8C8002F8076 /* NobelLaureatesFinder */;
+			targetProxy = 20564D6726B0C8CA002F8076 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20564D4E26B0C8C8002F8076 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20564D4F26B0C8C8002F8076 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		20564D5326B0C8CA002F8076 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20564D5426B0C8CA002F8076 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20564D6D26B0C8CA002F8076 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		20564D6E26B0C8CA002F8076 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20564D7026B0C8CA002F8076 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A9XXD646L9;
+				INFOPLIST_FILE = NobelLaureatesFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dz.NobelLaureatesFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20564D7126B0C8CA002F8076 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A9XXD646L9;
+				INFOPLIST_FILE = NobelLaureatesFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dz.NobelLaureatesFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		20564D7326B0C8CA002F8076 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A9XXD646L9;
+				INFOPLIST_FILE = NobelLaureatesFinderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dz.NobelLaureatesFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NobelLaureatesFinder.app/NobelLaureatesFinder";
+			};
+			name = Debug;
+		};
+		20564D7426B0C8CA002F8076 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A9XXD646L9;
+				INFOPLIST_FILE = NobelLaureatesFinderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dz.NobelLaureatesFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NobelLaureatesFinder.app/NobelLaureatesFinder";
+			};
+			name = Release;
+		};
+		20564D7626B0C8CA002F8076 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A9XXD646L9;
+				INFOPLIST_FILE = NobelLaureatesFinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dz.NobelLaureatesFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NobelLaureatesFinder;
+			};
+			name = Debug;
+		};
+		20564D7726B0C8CA002F8076 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A9XXD646L9;
+				INFOPLIST_FILE = NobelLaureatesFinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dz.NobelLaureatesFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NobelLaureatesFinder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20564D4026B0C8C8002F8076 /* Build configuration list for PBXProject "NobelLaureatesFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20564D6D26B0C8CA002F8076 /* Debug */,
+				20564D6E26B0C8CA002F8076 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20564D6F26B0C8CA002F8076 /* Build configuration list for PBXNativeTarget "NobelLaureatesFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20564D7026B0C8CA002F8076 /* Debug */,
+				20564D7126B0C8CA002F8076 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20564D7226B0C8CA002F8076 /* Build configuration list for PBXNativeTarget "NobelLaureatesFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20564D7326B0C8CA002F8076 /* Debug */,
+				20564D7426B0C8CA002F8076 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20564D7526B0C8CA002F8076 /* Build configuration list for PBXNativeTarget "NobelLaureatesFinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20564D7626B0C8CA002F8076 /* Debug */,
+				20564D7726B0C8CA002F8076 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20564D3D26B0C8C8002F8076 /* Project object */;
+}
