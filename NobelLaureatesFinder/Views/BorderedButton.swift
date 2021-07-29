@@ -35,7 +35,7 @@ class BorderedButton: UIButton {
         if keyPath == #keyPath(isHighlighted) {
             configureUIState(isHighlighted: isHighlighted)
         } else if keyPath == #keyPath(isEnabled) {
-            alpha = isEnabled ? 1.0 : 0.5
+            alpha = isEnabled ? 1.0 : 0.3
         } else {
             super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
         }
