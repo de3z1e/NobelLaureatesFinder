@@ -58,7 +58,6 @@ struct BackgroundWavesView: View {
         }
         .onDisappear {
             self.isAnimating = false
-            print("On Disappear")
         }
     }
     
