@@ -54,11 +54,17 @@ class LocationSearchResultsController: UITableViewController {
 
     private func configureSearchCompleter() {
         searchCompleter = MKLocalSearchCompleter()
+        searchCompleter?.resultTypes = [.address, .query]
         searchCompleter?.delegate = self
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let query = dataSource.snapshot().itemIdentifiers(inSection: .main)[indexPath.row].title
+        let completionItem = dataSource.snapshot().itemIdentifiers(inSection: .main)[indexPath.row]
+        var query = completionItem.title
+        let subtitle = completionItem.subtitle
+        if !subtitle.isEmpty {
+            query += " \(subtitle)"
+        }
         model.startLocationSearch(for: query)
         dismiss(animated: true, completion: nil)
     }

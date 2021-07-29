@@ -65,6 +65,7 @@ class LaureatesViewModel: ObservableObject {
         error = nil
         isLocationSearchLoading = true
         locationSearchRequest.naturalLanguageQuery = query
+        locationSearchRequest.resultTypes = .address
         locationSearch = MKLocalSearch(request: locationSearchRequest)
         locationSearch?.start(completionHandler: { [weak self] response, error in
             self?.isLocationSearchLoading = false
