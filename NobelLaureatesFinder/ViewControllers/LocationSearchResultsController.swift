@@ -54,7 +54,6 @@ class LocationSearchResultsController: UITableViewController {
 
     private func configureSearchCompleter() {
         searchCompleter = MKLocalSearchCompleter()
-        searchCompleter?.resultTypes = [.address, .query]
         searchCompleter?.delegate = self
     }
     
@@ -85,7 +84,7 @@ class LocationSearchResultsController: UITableViewController {
 
 extension LocationSearchResultsController: MKLocalSearchCompleterDelegate {
     func completerDidUpdateResults(_ completer: MKLocalSearchCompleter) {
-        applySnapshot(completer.results)
+        applySnapshot(completer.results.filter({ $0.subtitle != "Search Nearby" }))
     }
 }
 
