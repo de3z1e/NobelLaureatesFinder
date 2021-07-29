@@ -24,7 +24,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </searchBar>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5e-Lu-zGK">
-                                        <rect key="frame" x="8" y="102.5" width="358" height="30"/>
+                                        <rect key="frame" x="8" y="81.5" width="358" height="51"/>
                                         <connections>
                                             <action selector="locationSearchButtonAction:" destination="UVe-DC-mld" eventType="touchUpInside" id="Xo8-pZ-Wah"/>
                                             <action selector="locationSearchButtonTouchCancel:" destination="UVe-DC-mld" eventType="touchUpInside" id="Eal-7e-drn"/>
@@ -82,6 +82,7 @@
                                     <constraint firstAttribute="trailingMargin" secondItem="0ud-Pd-L2r" secondAttribute="trailing" id="DWw-JZ-Xaa"/>
                                     <constraint firstItem="LG7-dg-esd" firstAttribute="top" secondItem="0ud-Pd-L2r" secondAttribute="bottom" id="LQ0-74-c6m"/>
                                     <constraint firstItem="LG7-dg-esd" firstAttribute="leading" secondItem="h9H-1H-WbM" secondAttribute="leadingMargin" id="Wdu-El-4Ft"/>
+                                    <constraint firstItem="J5e-Lu-zGK" firstAttribute="top" secondItem="0ud-Pd-L2r" secondAttribute="top" id="XUy-Hq-oFq"/>
                                     <constraint firstItem="0ud-Pd-L2r" firstAttribute="top" secondItem="kDs-wj-zkS" secondAttribute="bottom" constant="8" id="giG-y9-8aq"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="LG7-dg-esd" secondAttribute="trailing" id="hCt-HJ-6ne"/>
                                     <constraint firstItem="kDs-wj-zkS" firstAttribute="top" secondItem="h9H-1H-WbM" secondAttribute="topMargin" constant="8" id="j8t-Rp-pGu"/>
