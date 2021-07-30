@@ -23,8 +23,8 @@ class SearchViewController: UIViewController, UISearchControllerDelegate {
     @IBOutlet weak var startSearchButton: BorderedButton!
     @IBAction func startSearchButtonAction(_ sender: BorderedButton) {
         model.sortLaureates()
-        let nobelPrizeWinnersNavigationController = UIStoryboard.nobelPrizeWinnersNavigationController
-        present(nobelPrizeWinnersNavigationController, animated: true)
+        let laureatesCollectionViewController = UIStoryboard.laureatesNavigationController
+        present(laureatesCollectionViewController, animated: true)
     }
     
     @IBOutlet weak var loadingActivityIndicator: UIActivityIndicatorView!
@@ -78,7 +78,7 @@ class SearchViewController: UIViewController, UISearchControllerDelegate {
         }.store(in: &subscribers)
         
         model.$isLoading.sink { [weak self] willLoad in
-            self?.startSearchButton.setTitle(willLoad ? "" : "Start Search", for: .normal)
+            self?.startSearchButton.setTitle(willLoad ? "" : "Go", for: .normal)
             self?.loadingActivityIndicator.isLoading = willLoad
             self?.startSearchButton.isEnabled = !willLoad && self?.model.selectedLocation != nil
         }.store(in: &subscribers)

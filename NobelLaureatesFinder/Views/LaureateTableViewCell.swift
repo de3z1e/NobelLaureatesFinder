@@ -1,50 +1,45 @@
 //
-//  LaureateDetailViewController.swift
+//  LaureateTableViewCell.swift
 //  NobelLaureatesFinder
 //
-//  Created by Dimitry Zadorozny on 7/29/21.
+//  Created by Dimitry Zadorozny on 7/30/21.
 //
 
 import UIKit
 
-class LaureateDetailViewController: UIViewController {
-
-    var laureate: Laureate?
+class LaureateTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var containerView: UIView! {
+    static let cellIdentifier = "LaureateTableViewCell"
+    
+    var laureate: Laureate? {
         didSet {
-            containerView.layer.cornerRadius = 10
-            containerView.clipsToBounds = true
-            let blurView = UIVisualEffectView(effect: UIBlurEffect(style: .systemUltraThinMaterial))
-            blurView.frame = containerView.bounds
-            blurView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-            containerView.insertSubview(blurView, at: 0)
+            laureateName.text = "\(laureate?.firstName ?? "") \(laureate?.surname ?? "")"
+            institutionName.text = laureate?.name
+            dateAndLocation.text = "\(laureate?.year.description ?? "") - \(laureate?.city ?? ""), \(laureate?.country ?? "")"
+            awardDescription.text = formattedAwardDescription(category: laureate?.category, motivation: laureate?.motivation, gender: laureate?.gender)
+            gender.text = laureate?.gender?.capitalized
+            born.text = formattedDateAndCityCountry(date: laureate?.born, city: laureate?.bornCity, country: laureate?.bornCountry)
+            died.text = formattedDateAndCityCountry(date: laureate?.died, city: laureate?.diedCity, country: laureate?.diedCountry)
         }
     }
     
-    @IBOutlet weak var awardDescriptionContainer: UIView! {
-        didSet {
-            awardDescriptionContainer.layer.cornerRadius = 10
-            awardDescriptionContainer.clipsToBounds = true
-        }
-    }
+    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var awardDescriptionContainer: UIView!
+    
     @IBOutlet weak var laureateName: UILabel!
     @IBOutlet weak var institutionName: UILabel!
     @IBOutlet weak var dateAndLocation: UILabel!
     @IBOutlet weak var awardDescription: UILabel!
-    @IBOutlet weak var gender: UILabel!
     @IBOutlet weak var born: UILabel!
     @IBOutlet weak var died: UILabel!
+    @IBOutlet weak var gender: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        laureateName.text = "\(laureate?.firstName ?? "") \(laureate?.surname ?? "")"
-        institutionName.text = laureate?.name
-        dateAndLocation.text = "\(laureate?.year.description ?? "") - \(laureate?.city ?? ""), \(laureate?.country ?? "")"
-        awardDescription.text = formattedAwardDescription(category: laureate?.category, motivation: laureate?.motivation, gender: laureate?.gender)
-        gender.text = laureate?.gender?.capitalized
-        born.text = formattedDateAndCityCountry(date: laureate?.born, city: laureate?.bornCity, country: laureate?.bornCountry)
-        died.text = formattedDateAndCityCountry(date: laureate?.died, city: laureate?.diedCity, country: laureate?.diedCountry)
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        containerView.layer.cornerRadius = 10
+        containerView.clipsToBounds = true
+        awardDescriptionContainer.layer.cornerRadius = 10
+        awardDescriptionContainer.clipsToBounds = true
     }
     
     private func formattedAwardDescription(category: String?, motivation: String?, gender: String?) -> String? {

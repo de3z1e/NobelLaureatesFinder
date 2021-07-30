@@ -46,7 +46,7 @@
                                             <constraint firstAttribute="height" constant="40" id="ssS-aZ-dVP"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <state key="normal" title="Start Search">
+                                        <state key="normal" title="Go">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -114,229 +114,163 @@
             <point key="canvasLocation" x="889.85507246376824" y="850.44642857142856"/>
         </scene>
         <!--Nobel Prize Winners-->
-        <scene sceneID="Tic-Jt-eoh">
+        <scene sceneID="F1z-Lb-awX">
             <objects>
-                <tableViewController storyboardIdentifier="NobelPrizeWinnersTableViewController" modalPresentationStyle="pageSheet" id="kAF-M6-yg1" customClass="LaureatesTableViewController" customModule="NobelLaureatesFinder" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="jPn-lI-qoq">
+                <tableViewController id="5Ll-Zc-b5t" customClass="LaureatesTableViewController" customModule="NobelLaureatesFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="O3b-9E-nmC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="NobelPrizeWinnerCell" id="At8-bY-kcp" customClass="NobelPrizeWinnerCell" customModule="NobelLaureatesFinder" customModuleProvider="target">
-                                <rect key="frame" x="20" y="49.5" width="374" height="81.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LaureateTableViewCell" id="rtf-aq-aBz" customClass="LaureateTableViewCell" customModule="NobelLaureatesFinder" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="325.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="At8-bY-kcp" id="PY3-d6-dcG">
-                                    <rect key="frame" x="0.0" y="0.0" width="344.5" height="81.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rtf-aq-aBz" id="uGF-7N-wEw">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="325.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Robert G. Edwards" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFy-od-RTO">
-                                            <rect key="frame" x="20" y="10" width="304.5" height="23"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fQo-3F-210">
+                                            <rect key="frame" x="16" y="8" width="382" height="309.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Andrew Fielding Huxley" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Shp-3X-2hV">
+                                                    <rect key="frame" x="20" y="8" width="342" height="25.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rgn-nJ-m9E">
+                                                    <rect key="frame" x="8" y="37.5" width="366" height="150"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="University College" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1o-7O-L1p">
+                                                            <rect key="frame" x="12" y="8" width="342" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1963 - London United Kingdom" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FiW-Yr-23R">
+                                                            <rect key="frame" x="12" y="26" width="342" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciA-JY-0eN">
+                                                            <rect key="frame" x="12" y="52" width="342" height="90"/>
+                                                            <string key="text">Awarded the Nobel Prize in Medicine for his discoveries concerning the ionic mechanisms involved in excitation and inhibition in the peripheral and central portions of the nerve cell membrane. </string>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemFillColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="ciA-JY-0eN" firstAttribute="leading" secondItem="FiW-Yr-23R" secondAttribute="leading" id="07j-hF-XxJ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="P1o-7O-L1p" secondAttribute="trailing" constant="12" id="8QL-ug-AMB"/>
+                                                        <constraint firstItem="FiW-Yr-23R" firstAttribute="trailing" secondItem="P1o-7O-L1p" secondAttribute="trailing" id="AEA-bA-aAM"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ciA-JY-0eN" secondAttribute="bottom" constant="8" id="Juh-Bl-Ykt"/>
+                                                        <constraint firstItem="FiW-Yr-23R" firstAttribute="top" secondItem="P1o-7O-L1p" secondAttribute="bottom" id="Q5W-jX-tqX"/>
+                                                        <constraint firstItem="FiW-Yr-23R" firstAttribute="leading" secondItem="P1o-7O-L1p" secondAttribute="leading" id="SkI-Qw-zbr"/>
+                                                        <constraint firstItem="ciA-JY-0eN" firstAttribute="trailing" secondItem="FiW-Yr-23R" secondAttribute="trailing" id="VMA-vN-07S"/>
+                                                        <constraint firstItem="ciA-JY-0eN" firstAttribute="top" secondItem="FiW-Yr-23R" secondAttribute="bottom" constant="8" symbolic="YES" id="bVk-XN-wyV"/>
+                                                        <constraint firstItem="P1o-7O-L1p" firstAttribute="leading" secondItem="rgn-nJ-m9E" secondAttribute="leading" constant="12" id="fcn-ri-rMn"/>
+                                                        <constraint firstItem="P1o-7O-L1p" firstAttribute="top" secondItem="rgn-nJ-m9E" secondAttribute="top" constant="8" id="mIq-ux-IRk"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Born:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rU9-mw-jDq">
+                                                    <rect key="frame" x="20" y="195.5" width="56.5" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="November 22, 1917 in Hamsptead, United Kingdom" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccz-MK-2eh">
+                                                    <rect key="frame" x="84.5" y="195.5" width="277.5" height="36"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Died:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fS-o4-jIn">
+                                                    <rect key="frame" x="20" y="239.5" width="56.5" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="May 30, 2012 in Hamsptead, United Kingdom" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDe-Oa-a8K">
+                                                    <rect key="frame" x="84.5" y="239.5" width="277.5" height="36"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Gender:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4C-fQ-pmt">
+                                                    <rect key="frame" x="20" y="283.5" width="56.5" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Male" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECD-GU-TVf">
+                                                    <rect key="frame" x="84.5" y="283.5" width="277.5" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemFillColor"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20.5" id="T6C-cs-m1X"/>
+                                                <constraint firstItem="ECD-GU-TVf" firstAttribute="leading" secondItem="q4C-fQ-pmt" secondAttribute="trailing" constant="8" id="27u-kC-WsC"/>
+                                                <constraint firstItem="Shp-3X-2hV" firstAttribute="leading" secondItem="fQo-3F-210" secondAttribute="leading" constant="20" symbolic="YES" id="3dM-Kg-nim"/>
+                                                <constraint firstItem="rU9-mw-jDq" firstAttribute="firstBaseline" secondItem="ccz-MK-2eh" secondAttribute="firstBaseline" id="8YN-l5-t7D"/>
+                                                <constraint firstAttribute="trailing" secondItem="ECD-GU-TVf" secondAttribute="trailing" constant="20" symbolic="YES" id="8wc-b4-dh4"/>
+                                                <constraint firstItem="rU9-mw-jDq" firstAttribute="trailing" secondItem="q4C-fQ-pmt" secondAttribute="trailing" id="Bho-gE-Azq"/>
+                                                <constraint firstItem="PDe-Oa-a8K" firstAttribute="leading" secondItem="8fS-o4-jIn" secondAttribute="trailing" constant="8" id="Cjg-vA-Ayh"/>
+                                                <constraint firstItem="ccz-MK-2eh" firstAttribute="trailing" secondItem="ECD-GU-TVf" secondAttribute="trailing" id="GVF-eP-UMF"/>
+                                                <constraint firstItem="q4C-fQ-pmt" firstAttribute="firstBaseline" secondItem="ECD-GU-TVf" secondAttribute="firstBaseline" id="KxG-Ow-mAX"/>
+                                                <constraint firstItem="8fS-o4-jIn" firstAttribute="trailing" secondItem="q4C-fQ-pmt" secondAttribute="trailing" id="N5H-1D-I9b"/>
+                                                <constraint firstAttribute="bottom" secondItem="ECD-GU-TVf" secondAttribute="bottom" constant="8" id="Qua-iR-vgo"/>
+                                                <constraint firstItem="rgn-nJ-m9E" firstAttribute="top" secondItem="Shp-3X-2hV" secondAttribute="bottom" constant="4" id="U2l-Wp-LtS"/>
+                                                <constraint firstItem="8fS-o4-jIn" firstAttribute="firstBaseline" secondItem="PDe-Oa-a8K" secondAttribute="firstBaseline" id="ZaW-jh-Cf9"/>
+                                                <constraint firstAttribute="trailing" secondItem="Shp-3X-2hV" secondAttribute="trailing" constant="20" symbolic="YES" id="cej-aA-Nb8"/>
+                                                <constraint firstAttribute="trailing" secondItem="rgn-nJ-m9E" secondAttribute="trailing" constant="8" id="cs1-rl-4Jz"/>
+                                                <constraint firstItem="PDe-Oa-a8K" firstAttribute="trailing" secondItem="ECD-GU-TVf" secondAttribute="trailing" id="dGy-09-Xa6"/>
+                                                <constraint firstItem="rgn-nJ-m9E" firstAttribute="leading" secondItem="fQo-3F-210" secondAttribute="leading" constant="8" id="drT-aO-q0k"/>
+                                                <constraint firstItem="8fS-o4-jIn" firstAttribute="leading" secondItem="q4C-fQ-pmt" secondAttribute="leading" id="gp4-z4-SyO"/>
+                                                <constraint firstItem="Shp-3X-2hV" firstAttribute="top" secondItem="fQo-3F-210" secondAttribute="top" constant="8" id="gzW-3z-aBb"/>
+                                                <constraint firstItem="rU9-mw-jDq" firstAttribute="leading" secondItem="q4C-fQ-pmt" secondAttribute="leading" id="ilt-iL-KYP"/>
+                                                <constraint firstItem="PDe-Oa-a8K" firstAttribute="top" secondItem="ccz-MK-2eh" secondAttribute="bottom" constant="8" id="nq3-Df-Tdu"/>
+                                                <constraint firstItem="ccz-MK-2eh" firstAttribute="leading" secondItem="ECD-GU-TVf" secondAttribute="leading" id="oBk-MD-vrF"/>
+                                                <constraint firstItem="q4C-fQ-pmt" firstAttribute="leading" secondItem="fQo-3F-210" secondAttribute="leading" constant="20" symbolic="YES" id="rjF-Bl-NMY"/>
+                                                <constraint firstItem="ECD-GU-TVf" firstAttribute="top" secondItem="PDe-Oa-a8K" secondAttribute="bottom" constant="8" id="vaQ-Ac-yVc"/>
+                                                <constraint firstItem="ccz-MK-2eh" firstAttribute="top" secondItem="rgn-nJ-m9E" secondAttribute="bottom" constant="8" id="xE9-JN-Mjt"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="University of Cambridge" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJc-Hw-84b">
-                                            <rect key="frame" x="20" y="33" width="304.5" height="17"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="14.5" id="utD-Kc-X2E"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="2010 - Cambridge United Kingdom" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XmE-DU-8v0">
-                                            <rect key="frame" x="20" y="50" width="304.5" height="21.5"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="84z-Hc-hae"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="XmE-DU-8v0" secondAttribute="bottom" constant="10" id="04A-1i-K5w"/>
-                                        <constraint firstItem="xFy-od-RTO" firstAttribute="top" secondItem="PY3-d6-dcG" secondAttribute="top" constant="10" id="57i-48-WMP"/>
-                                        <constraint firstItem="SJc-Hw-84b" firstAttribute="leading" secondItem="PY3-d6-dcG" secondAttribute="leading" constant="20" symbolic="YES" id="7Ux-Jc-74O"/>
-                                        <constraint firstAttribute="trailing" secondItem="SJc-Hw-84b" secondAttribute="trailing" constant="20" symbolic="YES" id="AvB-zP-Ygc"/>
-                                        <constraint firstItem="SJc-Hw-84b" firstAttribute="top" secondItem="xFy-od-RTO" secondAttribute="bottom" id="Esi-Co-bCM"/>
-                                        <constraint firstItem="XmE-DU-8v0" firstAttribute="top" secondItem="SJc-Hw-84b" secondAttribute="bottom" id="OeG-KC-FbN"/>
-                                        <constraint firstItem="xFy-od-RTO" firstAttribute="leading" secondItem="PY3-d6-dcG" secondAttribute="leading" constant="20" symbolic="YES" id="i7O-eb-Y15"/>
-                                        <constraint firstAttribute="trailing" secondItem="xFy-od-RTO" secondAttribute="trailing" constant="20" symbolic="YES" id="j0I-4Q-9lA"/>
-                                        <constraint firstItem="XmE-DU-8v0" firstAttribute="leading" secondItem="PY3-d6-dcG" secondAttribute="leading" constant="20" symbolic="YES" id="n3h-nJ-fWb"/>
-                                        <constraint firstAttribute="trailing" secondItem="XmE-DU-8v0" secondAttribute="trailing" constant="20" symbolic="YES" id="otk-3S-9eN"/>
+                                        <constraint firstAttribute="bottom" secondItem="fQo-3F-210" secondAttribute="bottom" constant="8" id="ECT-OX-M0D"/>
+                                        <constraint firstAttribute="trailing" secondItem="fQo-3F-210" secondAttribute="trailing" constant="16" id="EMG-3z-zvR"/>
+                                        <constraint firstItem="fQo-3F-210" firstAttribute="leading" secondItem="uGF-7N-wEw" secondAttribute="leading" constant="16" id="ElW-ab-JdU"/>
+                                        <constraint firstItem="fQo-3F-210" firstAttribute="top" secondItem="uGF-7N-wEw" secondAttribute="top" constant="8" id="llQ-1s-O96"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="dateAndLocation" destination="XmE-DU-8v0" id="MjM-sN-ZRF"/>
-                                    <outlet property="institutionName" destination="SJc-Hw-84b" id="x84-gY-LYg"/>
-                                    <outlet property="laureateName" destination="xFy-od-RTO" id="nRq-XS-Fbr"/>
-                                    <segue destination="B8h-F5-gHX" kind="show" identifier="LaureateViewControllerSegueId" id="GgL-Ts-DmP"/>
+                                    <outlet property="awardDescription" destination="ciA-JY-0eN" id="Cwr-Gx-cB2"/>
+                                    <outlet property="awardDescriptionContainer" destination="rgn-nJ-m9E" id="eZF-UW-Hcr"/>
+                                    <outlet property="born" destination="ccz-MK-2eh" id="zTu-4Q-nEJ"/>
+                                    <outlet property="containerView" destination="fQo-3F-210" id="Skr-T2-sKP"/>
+                                    <outlet property="dateAndLocation" destination="FiW-Yr-23R" id="FCd-fU-jKM"/>
+                                    <outlet property="died" destination="PDe-Oa-a8K" id="qiK-Lc-YaF"/>
+                                    <outlet property="gender" destination="ECD-GU-TVf" id="e8S-XU-dJE"/>
+                                    <outlet property="institutionName" destination="P1o-7O-L1p" id="JWZ-3R-HXS"/>
+                                    <outlet property="laureateName" destination="Shp-3X-2hV" id="Bnb-G1-pe5"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="kAF-M6-yg1" id="kHw-dc-B4s"/>
-                            <outlet property="delegate" destination="kAF-M6-yg1" id="xe0-Md-mkx"/>
+                            <outlet property="dataSource" destination="5Ll-Zc-b5t" id="QXl-1u-QCo"/>
+                            <outlet property="delegate" destination="5Ll-Zc-b5t" id="mr5-2q-zHU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Nobel Prize Winners" id="B9s-9b-Htw"/>
+                    <navigationItem key="navigationItem" title="Nobel Prize Winners" id="HBZ-ng-2vS"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4SP-mg-Oo0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U4Q-wt-Ezc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="889.85507246376824" y="1570.9821428571429"/>
-        </scene>
-        <!--Laureate Detail View Controller-->
-        <scene sceneID="8Co-D7-NB5">
-            <objects>
-                <viewController id="B8h-F5-gHX" customClass="LaureateDetailViewController" customModule="NobelLaureatesFinder" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="p8V-1S-JO6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uXY-UM-Kqn">
-                                <rect key="frame" x="20" y="108" width="374" height="301.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Andrew Fielding Huxley" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNg-UM-26g">
-                                        <rect key="frame" x="20" y="8" width="334" height="25.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lhL-iO-2q0">
-                                        <rect key="frame" x="8" y="37.5" width="358" height="150"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="University College" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vz1-Zf-GPm">
-                                                <rect key="frame" x="12" y="8" width="334" height="18"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="1963 - London United Kingdom" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8F-bw-tfF">
-                                                <rect key="frame" x="12" y="26" width="334" height="18"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfa-cd-tj3">
-                                                <rect key="frame" x="12" y="52" width="334" height="90"/>
-                                                <string key="text">Awarded the Nobel Prize in Medicine for his discoveries concerning the ionic mechanisms involved in excitation and inhibition in the peripheral and central portions of the nerve cell membrane</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemFillColor"/>
-                                        <constraints>
-                                            <constraint firstItem="W8F-bw-tfF" firstAttribute="top" secondItem="vz1-Zf-GPm" secondAttribute="bottom" id="5yx-mk-BVt"/>
-                                            <constraint firstItem="bfa-cd-tj3" firstAttribute="leading" secondItem="vz1-Zf-GPm" secondAttribute="leading" id="8fF-BG-WJX"/>
-                                            <constraint firstItem="bfa-cd-tj3" firstAttribute="top" secondItem="W8F-bw-tfF" secondAttribute="bottom" constant="8" id="Hbl-cd-BTW"/>
-                                            <constraint firstAttribute="trailing" secondItem="vz1-Zf-GPm" secondAttribute="trailing" constant="12" id="PKI-m7-2Pq"/>
-                                            <constraint firstAttribute="bottom" secondItem="bfa-cd-tj3" secondAttribute="bottom" constant="8" id="Pqt-8s-G1S"/>
-                                            <constraint firstItem="W8F-bw-tfF" firstAttribute="leading" secondItem="vz1-Zf-GPm" secondAttribute="leading" id="XCF-dd-mOc"/>
-                                            <constraint firstItem="vz1-Zf-GPm" firstAttribute="leading" secondItem="lhL-iO-2q0" secondAttribute="leading" constant="12" id="ZbN-jn-I0m"/>
-                                            <constraint firstItem="bfa-cd-tj3" firstAttribute="trailing" secondItem="vz1-Zf-GPm" secondAttribute="trailing" id="huy-rF-03e"/>
-                                            <constraint firstItem="W8F-bw-tfF" firstAttribute="trailing" secondItem="vz1-Zf-GPm" secondAttribute="trailing" id="nch-fn-DHC"/>
-                                            <constraint firstItem="vz1-Zf-GPm" firstAttribute="top" secondItem="lhL-iO-2q0" secondAttribute="top" constant="8" id="oJA-mH-Htx"/>
-                                        </constraints>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Gender:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJt-h6-Mra">
-                                        <rect key="frame" x="20" y="195.5" width="60" height="18"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="qrq-ta-h3n"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Born:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k32-l6-6ul">
-                                        <rect key="frame" x="20" y="217.5" width="60" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Died:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7u-HY-fD7">
-                                        <rect key="frame" x="20" y="257.5" width="60" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeA-W6-y40">
-                                        <rect key="frame" x="96" y="195.5" width="258" height="18"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="November 22, 1917 in Hamsptead, United Kingdom" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBb-uc-nUj">
-                                        <rect key="frame" x="96" y="217.5" width="258" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="May 30, 2012 in Hamsptead, United Kingdom" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Gz-aH-Ujp">
-                                        <rect key="frame" x="96" y="257.5" width="258" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="RBb-uc-nUj" firstAttribute="top" secondItem="BeA-W6-y40" secondAttribute="bottom" constant="4" id="0BJ-CW-xLR"/>
-                                    <constraint firstItem="BeA-W6-y40" firstAttribute="leading" secondItem="GJt-h6-Mra" secondAttribute="trailing" constant="16" id="1O1-ed-v75"/>
-                                    <constraint firstItem="jNg-UM-26g" firstAttribute="top" secondItem="uXY-UM-Kqn" secondAttribute="top" constant="8" id="7SS-ft-SQq"/>
-                                    <constraint firstItem="8Gz-aH-Ujp" firstAttribute="leading" secondItem="RBb-uc-nUj" secondAttribute="leading" id="7Xe-bC-z5O"/>
-                                    <constraint firstItem="BeA-W6-y40" firstAttribute="top" secondItem="lhL-iO-2q0" secondAttribute="bottom" constant="8" id="CIw-Qm-kWK"/>
-                                    <constraint firstItem="GJt-h6-Mra" firstAttribute="top" secondItem="lhL-iO-2q0" secondAttribute="bottom" constant="8" id="HSj-kf-V5R"/>
-                                    <constraint firstItem="D7u-HY-fD7" firstAttribute="bottom" secondItem="8Gz-aH-Ujp" secondAttribute="bottom" id="Lph-fq-qHF"/>
-                                    <constraint firstAttribute="bottom" secondItem="D7u-HY-fD7" secondAttribute="bottom" constant="8" id="Pxy-SP-2qy"/>
-                                    <constraint firstItem="BeA-W6-y40" firstAttribute="trailing" secondItem="jNg-UM-26g" secondAttribute="trailing" id="U9Q-Bq-SSz"/>
-                                    <constraint firstAttribute="trailing" secondItem="lhL-iO-2q0" secondAttribute="trailing" constant="8" id="ZdP-hc-BzJ"/>
-                                    <constraint firstItem="RBb-uc-nUj" firstAttribute="leading" secondItem="BeA-W6-y40" secondAttribute="leading" id="ZgX-r7-3OD"/>
-                                    <constraint firstItem="D7u-HY-fD7" firstAttribute="leading" secondItem="jNg-UM-26g" secondAttribute="leading" id="b6a-Bt-8SU"/>
-                                    <constraint firstItem="8Gz-aH-Ujp" firstAttribute="trailing" secondItem="RBb-uc-nUj" secondAttribute="trailing" id="cUq-5i-HXg"/>
-                                    <constraint firstAttribute="trailing" secondItem="jNg-UM-26g" secondAttribute="trailing" constant="20" symbolic="YES" id="eRK-oR-2eS"/>
-                                    <constraint firstItem="k32-l6-6ul" firstAttribute="trailing" secondItem="GJt-h6-Mra" secondAttribute="trailing" id="g1O-GO-xYa"/>
-                                    <constraint firstItem="lhL-iO-2q0" firstAttribute="top" secondItem="jNg-UM-26g" secondAttribute="bottom" constant="4" id="hl3-vi-jUX"/>
-                                    <constraint firstItem="D7u-HY-fD7" firstAttribute="trailing" secondItem="k32-l6-6ul" secondAttribute="trailing" id="l0x-AF-m0t"/>
-                                    <constraint firstItem="lhL-iO-2q0" firstAttribute="leading" secondItem="uXY-UM-Kqn" secondAttribute="leading" constant="8" id="nXh-uQ-WEK"/>
-                                    <constraint firstItem="k32-l6-6ul" firstAttribute="bottom" secondItem="RBb-uc-nUj" secondAttribute="bottom" id="oZb-At-5cJ"/>
-                                    <constraint firstItem="D7u-HY-fD7" firstAttribute="top" secondItem="k32-l6-6ul" secondAttribute="bottom" constant="4" id="qsb-OC-qYt"/>
-                                    <constraint firstItem="jNg-UM-26g" firstAttribute="leading" secondItem="uXY-UM-Kqn" secondAttribute="leading" constant="20" symbolic="YES" id="rjK-mC-zCS"/>
-                                    <constraint firstItem="k32-l6-6ul" firstAttribute="leading" secondItem="jNg-UM-26g" secondAttribute="leading" id="sud-8L-rEi"/>
-                                    <constraint firstItem="RBb-uc-nUj" firstAttribute="trailing" secondItem="BeA-W6-y40" secondAttribute="trailing" id="vBf-Fa-whE"/>
-                                    <constraint firstItem="k32-l6-6ul" firstAttribute="top" secondItem="GJt-h6-Mra" secondAttribute="bottom" constant="4" id="wVK-VI-9PM"/>
-                                    <constraint firstItem="8Gz-aH-Ujp" firstAttribute="top" secondItem="RBb-uc-nUj" secondAttribute="bottom" constant="4" id="xD8-L4-fuT"/>
-                                    <constraint firstItem="GJt-h6-Mra" firstAttribute="leading" secondItem="jNg-UM-26g" secondAttribute="leading" id="yEP-Ej-Ngb"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="vSP-dg-cJR"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="uXY-UM-Kqn" firstAttribute="leading" secondItem="vSP-dg-cJR" secondAttribute="leading" constant="20" id="dJN-SY-r8x"/>
-                            <constraint firstItem="uXY-UM-Kqn" firstAttribute="top" secondItem="vSP-dg-cJR" secondAttribute="top" constant="20" id="iRt-9m-lXi"/>
-                            <constraint firstItem="vSP-dg-cJR" firstAttribute="trailing" secondItem="uXY-UM-Kqn" secondAttribute="trailing" constant="20" id="nzE-uq-Foa"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="Hx3-MA-MOF"/>
-                    <connections>
-                        <outlet property="awardDescription" destination="bfa-cd-tj3" id="NGj-fN-RbP"/>
-                        <outlet property="awardDescriptionContainer" destination="lhL-iO-2q0" id="CAD-0k-stW"/>
-                        <outlet property="born" destination="RBb-uc-nUj" id="Hpd-TI-hUI"/>
-                        <outlet property="containerView" destination="uXY-UM-Kqn" id="JYL-d2-JwG"/>
-                        <outlet property="dateAndLocation" destination="W8F-bw-tfF" id="h8U-Oj-Bjs"/>
-                        <outlet property="died" destination="8Gz-aH-Ujp" id="8s4-E8-ZoG"/>
-                        <outlet property="gender" destination="BeA-W6-y40" id="Wd5-4c-3J5"/>
-                        <outlet property="institutionName" destination="vz1-Zf-GPm" id="1qS-pr-qiA"/>
-                        <outlet property="laureateName" destination="jNg-UM-26g" id="JEB-bu-nmn"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="35f-R2-bai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1673.913043478261" y="1576.3392857142856"/>
+            <point key="canvasLocation" x="890" y="1578"/>
         </scene>
         <!--Location Search Results Controller-->
         <scene sceneID="fRk-3e-DBs">
@@ -408,22 +342,22 @@
             <point key="canvasLocation" x="-20" y="851"/>
         </scene>
         <!--Laureates Navigation Controller-->
-        <scene sceneID="dUV-VP-rSX">
+        <scene sceneID="fty-S9-1Ry">
             <objects>
-                <navigationController storyboardIdentifier="NobelPrizeWinnersNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="GGw-eJ-V84" customClass="LaureatesNavigationController" customModule="NobelLaureatesFinder" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LaureatesNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="rb4-Y0-SCD" customClass="LaureatesNavigationController" customModule="NobelLaureatesFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2F1-aV-va1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7Tq-jP-xBJ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="kAF-M6-yg1" kind="relationship" relationship="rootViewController" id="P8e-UP-szi"/>
+                        <segue destination="5Ll-Zc-b5t" kind="relationship" relationship="rootViewController" id="ZSz-Gj-Ftz"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="erK-Zf-nUH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X4A-Vi-eIC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-20" y="1571"/>
+            <point key="canvasLocation" x="-17" y="1578"/>
         </scene>
     </scenes>
     <resources>

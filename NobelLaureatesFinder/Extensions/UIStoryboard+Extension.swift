@@ -15,8 +15,8 @@ extension UIStoryboard {
     static var locationSearchResultsController: LocationSearchResultsController {
         main.instantiateViewController(identifier: "LocationSearchResultsController") as LocationSearchResultsController
     }
-        
-    static var nobelPrizeWinnersNavigationController: LaureatesNavigationController {
-        main.instantiateViewController(identifier: "NobelPrizeWinnersNavigationController") as LaureatesNavigationController
+
+    static var laureatesNavigationController: LaureatesNavigationController {
+        main.instantiateViewController(identifier: "LaureatesNavigationController") as LaureatesNavigationController
     }
 }

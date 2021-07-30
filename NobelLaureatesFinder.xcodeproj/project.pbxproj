@@ -37,9 +37,8 @@
 		2063FFB526B2B29500C49AC8 /* SearchViewController+CLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2063FFB426B2B29500C49AC8 /* SearchViewController+CLLocationManagerDelegate.swift */; };
 		2063FFB726B2C7E200C49AC8 /* LaureatesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2063FFB626B2C7E200C49AC8 /* LaureatesTableViewController.swift */; };
 		2063FFB926B2CB7300C49AC8 /* LaureatesNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2063FFB826B2CB7300C49AC8 /* LaureatesNavigationController.swift */; };
-		2063FFBB26B2D08200C49AC8 /* NobelPrizeWinnerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2063FFBA26B2D08200C49AC8 /* NobelPrizeWinnerCell.swift */; };
-		2063FFBD26B2D7E400C49AC8 /* LaureateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2063FFBC26B2D7E400C49AC8 /* LaureateDetailViewController.swift */; };
 		208BB69926B2FCA5004EA3BF /* ModelViewError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208BB69826B2FCA5004EA3BF /* ModelViewError.swift */; };
+		20F83C2426B47A7300381DAF /* LaureateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F83C2326B47A7300381DAF /* LaureateTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,9 +89,8 @@
 		2063FFB426B2B29500C49AC8 /* SearchViewController+CLLocationManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchViewController+CLLocationManagerDelegate.swift"; sourceTree = "<group>"; };
 		2063FFB626B2C7E200C49AC8 /* LaureatesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaureatesTableViewController.swift; sourceTree = "<group>"; };
 		2063FFB826B2CB7300C49AC8 /* LaureatesNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaureatesNavigationController.swift; sourceTree = "<group>"; };
-		2063FFBA26B2D08200C49AC8 /* NobelPrizeWinnerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NobelPrizeWinnerCell.swift; sourceTree = "<group>"; };
-		2063FFBC26B2D7E400C49AC8 /* LaureateDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaureateDetailViewController.swift; sourceTree = "<group>"; };
 		208BB69826B2FCA5004EA3BF /* ModelViewError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewError.swift; sourceTree = "<group>"; };
+		20F83C2326B47A7300381DAF /* LaureateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaureateTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,7 +217,6 @@
 				2063FFB826B2CB7300C49AC8 /* LaureatesNavigationController.swift */,
 				2063FFB626B2C7E200C49AC8 /* LaureatesTableViewController.swift */,
 				2061DF8826B233A300CD58A4 /* LocationSearchResultsController.swift */,
-				2063FFBC26B2D7E400C49AC8 /* LaureateDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -227,12 +224,12 @@
 		20564D9226B10BC4002F8076 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				20564D9426B1137B002F8076 /* UIActivityIndicatorView+Extension.swift */,
-				2061DF7E26B1D55000CD58A4 /* SearchViewController+UIPickerViewDelegates.swift */,
-				2061DF8426B20BA000CD58A4 /* UIColor+Extension.swift */,
-				2061DF8626B2331100CD58A4 /* UIStoryboard+Extension.swift */,
-				2061DF8C26B26F1500CD58A4 /* UISearchBar+Extension.swift */,
 				2063FFB426B2B29500C49AC8 /* SearchViewController+CLLocationManagerDelegate.swift */,
+				2061DF7E26B1D55000CD58A4 /* SearchViewController+UIPickerViewDelegates.swift */,
+				20564D9426B1137B002F8076 /* UIActivityIndicatorView+Extension.swift */,
+				2061DF8426B20BA000CD58A4 /* UIColor+Extension.swift */,
+				2061DF8C26B26F1500CD58A4 /* UISearchBar+Extension.swift */,
+				2061DF8626B2331100CD58A4 /* UIStoryboard+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -242,7 +239,7 @@
 			children = (
 				2061DF8026B1EDC700CD58A4 /* BorderedButton.swift */,
 				2061DF8226B1FA0800CD58A4 /* BackgroundWavesView.swift */,
-				2063FFBA26B2D08200C49AC8 /* NobelPrizeWinnerCell.swift */,
+				20F83C2326B47A7300381DAF /* LaureateTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -380,6 +377,7 @@
 				2061DF7B26B1CE4000CD58A4 /* SearchViewController.swift in Sources */,
 				20564D8526B0DD6C002F8076 /* Fetchable.swift in Sources */,
 				2063FFB526B2B29500C49AC8 /* SearchViewController+CLLocationManagerDelegate.swift in Sources */,
+				20F83C2426B47A7300381DAF /* LaureateTableViewCell.swift in Sources */,
 				20564D9526B1137B002F8076 /* UIActivityIndicatorView+Extension.swift in Sources */,
 				20564D7C26B0C942002F8076 /* Laureate.swift in Sources */,
 				2061DF7F26B1D55000CD58A4 /* SearchViewController+UIPickerViewDelegates.swift in Sources */,
@@ -392,12 +390,10 @@
 				20564D7F26B0CA02002F8076 /* ModelError.swift in Sources */,
 				208BB69926B2FCA5004EA3BF /* ModelViewError.swift in Sources */,
 				2061DF8526B20BA000CD58A4 /* UIColor+Extension.swift in Sources */,
-				2063FFBB26B2D08200C49AC8 /* NobelPrizeWinnerCell.swift in Sources */,
 				2061DF8126B1EDC700CD58A4 /* BorderedButton.swift in Sources */,
 				2063FFB926B2CB7300C49AC8 /* LaureatesNavigationController.swift in Sources */,
 				20564D8926B1047F002F8076 /* LaureatesViewModel.swift in Sources */,
 				20564D4926B0C8C8002F8076 /* AppDelegate.swift in Sources */,
-				2063FFBD26B2D7E400C49AC8 /* LaureateDetailViewController.swift in Sources */,
 				20564D4B26B0C8C8002F8076 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
